@@ -1,0 +1,195 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7f9;
+    color:#333;
+}
+
+/* Header */
+h1{
+    background:#003366;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+h2{
+    color:#003366;
+    margin:20px;
+}
+
+h3{
+    color:#00509e;
+    margin:15px;
+}
+
+hr{
+    border:1px solid #ddd;
+    margin:15px 0;
+}
+
+/* Navigation */
+
+a{
+    text-decoration:none;
+    color:#003366;
+    font-weight:bold;
+    margin:10px;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#ff6600;
+}
+
+/* Images */
+
+img{
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Paragraph */
+
+p{
+    width:80%;
+    margin:20px auto;
+    font-size:18px;
+    line-height:1.6;
+    text-align: left;
+}
+
+/* List */
+
+ul{
+    display:inline-block;
+    text-align:left;
+    margin:20px;
+}
+
+li{
+    padding:8px;
+    font-size:17px;
+}
+
+/* Tables */
+
+table{
+    width:90%;
+    margin:25px auto;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+th{
+    background:#003366;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+}
+
+table,th,td{
+    border:1px solid #ccc;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#d6ecff;
+}
+
+/* Forms */
+
+form{
+    width:600px;
+    margin:20px auto;
+    padding:25px;
+    background:white;
+    border:2px solid #003366;
+    border-radius:12px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+}
+
+form table{
+    width:100%;
+}
+
+form td{
+    padding:15px;
+    font-size:18px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #999;
+    border-radius:5px;
+    font-size:16px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    width:150px;
+    margin:10px;
+}
+button{
+
+    background:#003366;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    margin:8px;
+    font-size:16px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+
+    background:#ff6600;
+}
+
+/* Catalogue Images */
+
+table img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+}
+
+/* Timetable */
+
+th:first-child,
+td:first-child{
+    font-weight:bold;
+    background:#00509e;
+    color:white;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
