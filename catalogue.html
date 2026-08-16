@@ -1,72 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Catalogue</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Fountain - Catalogue</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-<center>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Hotel Fountain</a>
 
-<h1>Hotel Fountain</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<hr>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="catalogue.html">Catalogue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Registration</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<a href="index.html">Home</a> |
-<a href="login.html">Login</a> |
-<a href="registration.html">Registration</a>
+<div class="container my-5">
 
-<hr>
+    <h1 class="text-center mb-4">Available Rooms</h1>
 
-<h2>Available Rooms</h2>
+    <div class="alert alert-success text-center">
+        All rooms are currently available for booking.
+    </div>
 
-<table border="1" cellpadding="10">
+    <div class="table-responsive">
 
-<tr>
-<th>Room Image</th>
-<th>Room Type</th>
-<th>Price/Night</th>
-<th>Facilities</th>
-<th>Availability</th>
-</tr>
+        <table class="table table-bordered table-striped table-hover align-middle">
 
-<tr>
-<td><img src="deluxe room.jpg" width="180"></td>
-<td>Deluxe Room</td>
-<td>2000 rs</td>
-<td>AC, TV, Wi-Fi</td>
-<td>Available</td>
-</tr>
+            <thead class="table-primary">
+                <tr>
+                    <th>Room Image</th>
+                    <th>Room Type</th>
+                    <th>Price / Night</th>
+                    <th>Facilities</th>
+                    <th>Availability</th>
+                    <th>Booking</th>
+                </tr>
+            </thead>
 
-<tr>
-<td><img src="super deluxe.jpg" width="180"></td>
-<td>Super Deluxe</td>
-<td>3500 rs</td>
-<td>King Bed, Balcony, AC</td>
-<td>Available</td>
-</tr>
+            <tbody>
 
-<tr>
-<td><img src="Suite room.jpg" width="180"></td>
-<td>Suite Room</td>
-<td>5000 rs</td>
-<td>Living Room, Mini Bar, Jacuzzi</td>
-<td>Available</td>
-</tr>
+                <tr>
+                    <td>
+                        <img src="room1.jpg" width="150" class="img-fluid rounded" alt="Deluxe Room">
+                    </td>
 
-<tr>
-<td><img src="family room.jpg" width="180"></td>
-<td>Family Room</td>
-<td>4000 rs</td>
-<td>4 Beds, TV, Wi-Fi</td>
-<td>Available</td>
-</tr>
+                    <td>Deluxe Room</td>
 
-</table>
+                    <td>₹4,000</td>
 
-</center>
+                    <td>
+                        AC, TV, Wi-Fi
+                    </td>
+
+                    <td>
+                        <span class="badge bg-success">Available</span>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-primary">Book Now</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="room2.jpg" width="150" class="img-fluid rounded" alt="Super Deluxe Room">
+                    </td>
+
+                    <td>Super Deluxe</td>
+
+                    <td>₹6,000</td>
+
+                    <td>
+                        AC, King Bed, Balcony
+                    </td>
+
+                    <td>
+                        <span class="badge bg-success">Available</span>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-primary">Book Now</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="room3.jpg" width="150" class="img-fluid rounded" alt="Suite Room">
+                    </td>
+
+                    <td>Suite Room</td>
+
+                    <td>₹8,000</td>
+
+                    <td>
+                        Mini Bar, AC, Living Room
+                    </td>
+
+                    <td>
+                        <span class="badge bg-success">Available</span>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-primary">Book Now</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="room4.jpg" width="150" class="img-fluid rounded" alt="Family Room">
+                    </td>
+
+                    <td>Family Room</td>
+
+                    <td>₹7,000</td>
+
+                    <td>
+                        4 Beds, TV, Wi-Fi
+                    </td>
+
+                    <td>
+                        <span class="badge bg-success">Available</span>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-primary">Book Now</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <nav class="mt-4">
+
+        <ul class="pagination justify-content-center">
+
+            <li class="page-item disabled">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+<footer class="bg-primary text-white text-center p-3 mt-5">
+    <p class="mb-0">© 2026 Hotel Fountain</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
